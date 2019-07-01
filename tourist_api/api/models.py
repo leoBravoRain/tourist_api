@@ -30,7 +30,7 @@ class Location(models.Model):
 
 	# Metodo para obtener nombre de objeto
 	def __str__(self):
-	   return self.name
+	   return self.name + '_' + self.place.name
 
 # Videos of location
 class Videos_Location(models.Model):
